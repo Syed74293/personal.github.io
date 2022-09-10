@@ -1,0 +1,48 @@
+/* Main classes */
+
+.h-primary
+{
+    font-size: 1.5rem;
+    padding: 14px 9px;
+    margin-top: 0px;
+}
+.btn
+{
+    font-size: 0.8rem;
+}
+
+/* Home section */
+
+#home::before
+{
+    height: 17rem;
+}
+#home p
+{
+    font-size: 1rem;
+}
+
+/* Partners section */
+
+#partners
+{
+    flex-wrap: nowrap;
+    overflow: scroll;
+    margin: 5px 9px;
+}
+
+/* Contact section */
+
+#contact
+{
+    margin-top: -5px;
+}
+#contact-box input,
+#contact-box textarea
+{
+    font-size: 0.7rem;
+}
+#contact-box label
+{
+    font-size: 1rem;
+}

@@ -1,0 +1,262 @@
+/* Reset */
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+/* Smooth scrolling */
+
+html
+{
+    scroll-behavior: smooth;
+}
+
+/* Apply to all */
+
+:root {
+    --description: 'Combo', cursive;
+    --heading: 'Courgette', cursive;
+    --nav: 'Rancho', cursive;
+}
+
+/* Main classes */
+
+.center {
+    text-align: center;
+}
+
+.h-primary {
+    font-size: 2.5rem;
+    padding: 23px 11px;
+    font-family: var(--heading);
+}
+
+.h-secondary {
+    font-size: 2;
+    font-family: var(--heading);
+}
+
+.btn {
+    margin: 17px;
+    background-color: #1c3f51;
+    color: white;
+    font-size: 1.5rem;
+    border: 2px solid white;
+    padding: 5px 7px;
+    opacity: 0.8;
+    border-radius: 11px;
+    cursor: pointer;
+}
+
+/* Navbar */
+
+#navbar {
+    display: flex;
+    align-items: center;
+    position: sticky;
+    top: 0px;
+    left: 0px;
+    height: auto;
+}
+
+/* Navbar Logo */
+
+#navbar div img {
+    width: 50px;
+    height: 50px;
+    margin: 3px 11px;
+}
+
+#navbar ul {
+    display: flex;
+}
+
+#navbar ul li {
+    list-style: none;
+}
+
+#navbar ul li a {
+    text-decoration: none;
+    padding: 2px 9px;
+    font-size: 1.4rem;
+    color: white;
+    transition: all 0.2s ease-in-out;
+    font-family: var(--nav);
+}
+
+#navbar ul li a:hover {
+    background-color: white;
+    color: #1c3f51;
+    border-radius: 7px;
+}
+
+#navbar::before {
+    background-color: black;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    content: "";
+    z-index: -1;
+    opacity: 0.4;
+    top: 0px;
+}
+
+/* Section 1 */
+/* Heading */
+
+#home {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    height: auto;
+}
+
+
+#home p {
+    font-size: 1.5rem;
+    padding: 1px 7px;
+    font-family: var(--description);
+}
+
+#home::before {
+    background: url('/Images/bg1.jpg') no-repeat center center/cover;
+    content: "";
+    width: 100%;
+    position: absolute;
+    z-index: -1;
+    opacity: 0.9;
+    top: 0px;
+    left: 0px;
+    height: 18.25rem;
+}
+
+
+#home button:hover {
+    opacity: 0.7;
+}
+
+/* Section 2 */
+/* Services and Designers */
+
+#services-container {
+    height: 500px;
+    padding: 3px 3px;
+}
+
+#services {
+    display: flex;
+    margin: 24px;
+}
+
+#services .box {
+    border: 2px solid brown;
+    margin: 7px 4px;
+    padding: 14px 14px;
+    border-radius: 23px;
+    background-color: #ececec;
+}
+
+#services .box img {
+    display: block;
+    margin: auto;
+    width: 160px;
+    height: 100px;
+}
+
+#services .box h2 {
+    padding: 14px 2px 7px 2px;
+}
+
+
+#services .box p {
+    font-family: var(--description);
+}
+
+/* Section 3 */
+/* Clients */
+
+#partner-section {
+    height: auto;
+    position: relative;
+}
+
+#partner-section::before {
+    background: url('/Images/bg2.jpg') no-repeat center center/cover;
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: -1;
+    opacity: 0.4;
+}
+
+#partners {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 5px 20px;
+}
+
+.partner-item img {
+    width: 9rem;
+    padding: 14px 24px;
+}
+
+/* Section 4 */
+/* Contact form */
+
+#contact {
+    position: relative;
+    margin-top: -5px;
+}
+
+#contact::before {
+    background: url('/Images/bg3.jpg') no-repeat center center/cover;
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.6;
+}
+
+#contact-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 34px;
+}
+
+#contact-box input,
+#contact-box textarea {
+    width: 100%;
+    padding: 0.4rem;
+    border-radius: 7px;
+    border: 2px solid #5e5e5e;
+    font-size: 1rem;
+}
+
+#contact-box form {
+    width: 35%;
+}
+
+#contact-box label {
+    font-size: 1.3rem;
+    font-family: var(--heading);
+}
+
+.form-group {
+    padding: 5px 0px;
+}
+
+/* Footer */
+footer {
+    background-color: black;
+    color: white;
+    padding: 7px 5px;
+}

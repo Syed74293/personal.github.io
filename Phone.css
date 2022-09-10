@@ -1,0 +1,64 @@
+/* Main classes */
+
+.h-primary
+{
+    font-size: 1.8rem;
+    padding: 20px 9px;
+    margin-top: 7px;
+}
+.h-secondary
+{
+    font-size: 1.3rem;
+}
+.btn
+{
+    font-size: 1rem;
+    margin: 14px;
+}
+
+/* Nav section */
+
+#navbar
+{
+    flex-direction: column;
+}
+
+/* Home section */
+
+#home::before
+{
+    height: 19rem;
+}
+#home p
+{
+    font-size: 1.3rem;
+}
+
+/* Services section */
+
+#services
+{
+    flex-direction: column;
+}
+#services-container
+{
+    height: auto;
+}
+
+/* Partner section */
+
+#partner-section
+{
+    height: auto;
+}
+.partner-item img
+{
+    width: 8rem;
+}
+
+/* Contact section */
+
+#contact
+{
+    margin-top: -7px;
+}
